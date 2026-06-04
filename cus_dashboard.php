@@ -1,8 +1,8 @@
 <?php
 
-require '../session.php';
-require '../auth_check.php';
-require '../role_check.php';
+require 'session.php';
+require 'auth_check.php';
+require 'role_check.php';
 
 requireRole('customer');
 
@@ -12,7 +12,7 @@ requireRole('customer');
 |--------------------------------------------------------------------------
 */
 if (!isset($_SESSION['user_id'])) {
-    header("Location: ../login.php");
+    header("Location: login.php");
     exit();
 }
 
@@ -42,7 +42,7 @@ rel="stylesheet">
 
 <!-- LOGOUT -->
 <div class="position-fixed top-0 end-0 m-3" style="z-index: 9999;">
-    <a href="../logout.php" class="btn btn-danger">
+    <a href="logout.php" class="btn btn-danger">
         Logout
     </a>
 </div>
