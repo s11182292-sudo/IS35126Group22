@@ -1,8 +1,8 @@
 <?php
 
-require '../config/session.php';
-require '../config/db.php';
-require '../config/auth_check.php';
+require 'session.php';
+require 'db.php';
+require 'auth_check.php';
 
 /*
 |--------------------------------------------------------------------------
@@ -10,7 +10,7 @@ require '../config/auth_check.php';
 |--------------------------------------------------------------------------
 */
 if (!isset($_SESSION['user_id'])) {
-    header("Location: ../auth/login.php");
+    header("Location: login.php");
     exit();
 }
 
@@ -47,9 +47,9 @@ rel="stylesheet">
 
     <div>
         <?php if (isset($_SESSION['user_id'])): ?>
-            <a href="../auth/logout.php" class="btn btn-danger btn-sm">Logout</a>
+            <a href="logout.php" class="btn btn-danger btn-sm">Logout</a>
         <?php else: ?>
-            <a href="../auth/login.php" class="btn btn-success btn-sm">Login</a>
+            <a href="login.php" class="btn btn-success btn-sm">Login</a>
         <?php endif; ?>
     </div>
 </nav>
@@ -74,7 +74,7 @@ rel="stylesheet">
 
     <div class="card shadow h-100">
 
-        <img src="../assets/images/island.jpeg"
+        <img src="island.jpeg"
              class="card-img-top"
              style="height:200px; object-fit:cover;"
              alt="Tour image">
@@ -105,7 +105,7 @@ rel="stylesheet">
 
             <?php else: ?>
 
-                <a href="../auth/login.php"
+                <a href="login.php"
                    class="btn btn-secondary w-100">
 
                     Login to Book
