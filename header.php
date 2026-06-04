@@ -14,7 +14,7 @@ content="width=device-width, initial-scale=1">
 rel="stylesheet">
 
 <link rel="stylesheet"
-href="/IS35126Group22/assets/css/style.css">
+href="/IS35126Group22/style.css">
 
 </head>
 
