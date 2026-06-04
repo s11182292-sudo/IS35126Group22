@@ -1,7 +1,7 @@
 <?php
 date_default_timezone_set('Pacific/Fiji');
-require '../config/session.php';
-require '../config/google-config.php';
+require '../session.php';
+require '../google-config.php';
 
 if (!isset($client)) {
     die("Google Client not configured.");
