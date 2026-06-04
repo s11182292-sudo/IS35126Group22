@@ -1,7 +1,7 @@
 <?php
 
-require 'auth_check.php';
-require 'role_check.php';
+require __DIR__ . '/auth_check.php';
+require __DIR__ . '/role_check.php';
 
 requireRole('admin');
 ?>
