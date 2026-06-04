@@ -1,7 +1,7 @@
 <?php
 date_default_timezone_set('Pacific/Fiji');
-require '../session.php';
-require '../db.php';
+require 'session.php';
+require 'db.php';
 require '../vendor/autoload.php';
 
 use PHPMailer\PHPMailer\PHPMailer;
