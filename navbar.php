@@ -10,13 +10,13 @@
         <ul class="navbar-nav ms-auto">
 
             <li class="nav-item">
-                <a class="nav-link text-white" href="/IS35126Group22/auth/login.php">
+                <a class="nav-link text-white" href="/IS35126Group22/login.php">
                     Login
                 </a>
             </li>
 
             <li class="nav-item">
-                <a class="nav-link text-danger" href="/IS35126Group22/auth/logout.php">
+                <a class="nav-link text-danger" href="/IS35126Group22/logout.php">
                     Logout
                 </a>
             </li>
