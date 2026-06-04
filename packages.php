@@ -1,8 +1,8 @@
 <?php
 
-require 'session.php';
-require 'db.php';
-require 'auth_check.php';
+require __DIR__ . '/session.php';
+require __DIR__ . '/db.php';
+require __DIR__ . '/auth_check.php';
 
 /*
 |--------------------------------------------------------------------------
