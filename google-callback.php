@@ -26,7 +26,7 @@ $name  = $userInfo->name;
 $google_id = $userInfo->id;
 
 // TODO: connect to DB and create/login user
-require '../db.php';
+require __DIR__ . '/db.php';
 
 $stmt = $pdo->prepare("SELECT * FROM users WHERE email = ?");
 $stmt->execute([$email]);
