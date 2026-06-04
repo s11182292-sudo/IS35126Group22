@@ -1,10 +1,10 @@
 <?php
 
-require '../config/session.php';
-require '../config/security.php';
-require '../config/auth_check.php';
-require '../config/role_check.php';
-require '../config/db.php';
+require '../session.php';
+require '../security.php';
+require '../auth_check.php';
+require '../role_check.php';
+require '../db.php';
 
 requireRole('admin');
 
@@ -22,7 +22,7 @@ $timeout = 15 * 60;
 if (time() - $_SESSION['last_activity'] > $timeout) {
     session_unset();
     session_destroy();
-    header("Location: ../auth/login.php");
+    header("Location: ../login.php");
     exit();
 }
 
@@ -144,7 +144,7 @@ $packages = $pdo->query("
 
 <nav class="navbar navbar-dark bg-dark px-3">
     <span class="navbar-brand">Admin Panel - Manage Packages</span>
-    <a href="../auth/logout.php" class="btn btn-danger">Logout</a>
+    <a href="../logout.php" class="btn btn-danger">Logout</a>
 </nav>
 
 <div class="container mt-4">
