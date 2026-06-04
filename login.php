@@ -1,7 +1,7 @@
 <?php
 date_default_timezone_set('Pacific/Fiji');
-require '../config/session.php';
-require '../config/db.php';
+require '../session.php';
+require '../db.php';
 require '../vendor/autoload.php';
 
 use PHPMailer\PHPMailer\PHPMailer;
@@ -30,7 +30,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         | VERIFY GOOGLE reCAPTCHA
         |--------------------------------------------------------------------------
         */
-        $secretKey = "6LdONQotAAAAAJSvQnqD3kxSxTEwTN7Y9GSOTNBp";
+        $secretKey = $_ENV['RECAPTCHA_SECRET'];
 
         $verify = file_get_contents(
             "https://www.google.com/recaptcha/api/siteverify?secret="
