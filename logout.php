@@ -1,7 +1,7 @@
 <?php
 date_default_timezone_set('Pacific/Fiji');
-require '../config/session.php';
-require '../config/db.php';
+require '../session.php';
+require '../db.php';
 
 /*
 |--------------------------------------------------------------------------
@@ -60,5 +60,5 @@ if (ini_get("session.use_cookies")) {
 | REDIRECT TO LOGIN
 |--------------------------------------------------------------------------
 */
-header("Location: ../auth/login.php");
+header("Location: ../login.php");
 exit();
