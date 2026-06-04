@@ -1,0 +1,76 @@
+body{
+    background:#f5f9fc;
+}
+
+/* Hero Section */
+
+.hero{
+
+height:500px;
+
+background:
+linear-gradient(
+rgba(0,0,0,.4),
+rgba(0,0,0,.4)
+),
+url('../images/hero.jpg');
+
+background-size:cover;
+background-position:center;
+
+display:flex;
+align-items:center;
+justify-content:center;
+
+color:white;
+text-align:center;
+}
+
+.hero h1{
+    font-size:4rem;
+}
+
+.hero p{
+    font-size:1.3rem;
+}
+
+/* Cards */
+
+.package-card{
+
+border:none;
+
+border-radius:15px;
+
+overflow:hidden;
+
+transition:.3s;
+}
+
+.package-card:hover{
+
+transform:translateY(-5px);
+
+box-shadow:
+0 10px 25px rgba(0,0,0,.2);
+}
+
+.package-card img{
+
+height:220px;
+object-fit:cover;
+}
+
+/* Dashboard Cards */
+
+.stat-card{
+
+border-radius:15px;
+
+padding:25px;
+
+color:white;
+
+box-shadow:
+0 5px 20px rgba(0,0,0,.1);
+}
