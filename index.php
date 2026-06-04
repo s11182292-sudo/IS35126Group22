@@ -24,14 +24,14 @@ include __DIR__ . '/navbar.php';
 
 <?php if (!$isLoggedIn): ?>
 
-    <a href="register.php"
+    <a href="/register.php"
        class="btn btn-warning btn-lg">
         Get Started
     </a>
 
 <?php else: ?>
 
-    <a href="redirect.php"
+    <a href="/redirect.php"
        class="btn btn-success btn-lg">
         Go to Dashboard
     </a>
