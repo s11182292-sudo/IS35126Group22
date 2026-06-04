@@ -1,10 +1,10 @@
 <?php
 
-require '../config/session.php';
-require '../config/security.php';
-require '../config/auth_check.php';
-require '../config/role_check.php';
-require '../config/db.php';
+require '../session.php';
+require '../security.php';
+require '../auth_check.php';
+require '../role_check.php';
+require '../db.php';
 
 requireRole('customer');
 
