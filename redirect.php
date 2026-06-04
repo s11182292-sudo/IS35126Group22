@@ -23,17 +23,17 @@ $role = $_SESSION['role'];
 */
 if ($role === 'admin') {
 
-    header("Location: admin/dashboard.php");
+    header("Location: admin_dashboard.php");
     exit();
 
 } elseif ($role === 'agent') {
 
-    header("Location: agent/dashboard.php");
+    header("Location: agent_dashboard.php");
     exit();
 
 } elseif ($role === 'customer') {
 
-    header("Location: customer/dashboard.php");
+    header("Location: cus_dashboard.php");
     exit();
 
 } else {
