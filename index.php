@@ -1,6 +1,6 @@
 <?php
 
-require 'config/session.php';
+require 'session.php';
 
 /*
 |--------------------------------------------------------------------------
@@ -9,8 +9,8 @@ require 'config/session.php';
 */
 $isLoggedIn = isset($_SESSION['user_id']);
 
-include 'includes/header.php';
-include 'includes/navbar.php';
+include 'header.php';
+include 'navbar.php';
 
 ?>
 
@@ -24,7 +24,7 @@ include 'includes/navbar.php';
 
 <?php if (!$isLoggedIn): ?>
 
-    <a href="auth/register.php"
+    <a href="register.php"
        class="btn btn-warning btn-lg">
         Get Started
     </a>
@@ -83,4 +83,4 @@ include 'includes/navbar.php';
 
 </div>
 
-<?php include 'includes/footer.php'; ?>
+<?php include 'footer.php'; ?>
