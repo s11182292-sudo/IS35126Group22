@@ -100,7 +100,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     WHERE user_id = ? AND verified = 1
                 ")->execute([$user_id]);
 
-                header("Location: ../redirect.php");
+                header("Location: redirect.php");
                 exit();
             }
 
