@@ -83,4 +83,4 @@ include __DIR__ . '/navbar.php';
 
 </div>
 
-<?php include 'footer.php'; ?>
+<?php include __DIR__ . '/footer.php'; ?>
