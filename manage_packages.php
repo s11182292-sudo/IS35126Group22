@@ -1,10 +1,10 @@
 <?php
 
-require '../session.php';
-require '../security.php';
-require '../auth_check.php';
-require '../role_check.php';
-require '../db.php';
+require 'session.php';
+require 'security.php';
+require 'auth_check.php';
+require 'role_check.php';
+require 'db.php';
 
 requireRole('admin');
 
@@ -22,7 +22,7 @@ $timeout = 15 * 60;
 if (time() - $_SESSION['last_activity'] > $timeout) {
     session_unset();
     session_destroy();
-    header("Location: ../login.php");
+    header("Location: login.php");
     exit();
 }
 
