@@ -1,10 +1,10 @@
 <?php
 
-require '../config/session.php';
-require '../config/security.php';
-require '../config/auth_check.php';
-require '../config/role_check.php';
-require '../config/db.php';
+require '../session.php';
+require '../security.php';
+require '../auth_check.php';
+require '../role_check.php';
+require '../db.php';
 
 requireRole('admin');
 
@@ -27,7 +27,7 @@ $logs = $pdo->query("
 
 <nav class="navbar navbar-dark bg-dark px-3">
     <span class="navbar-brand">Audit Logs</span>
-    <a href="../auth/logout.php" class="btn btn-danger">Logout</a>
+    <a href="../logout.php" class="btn btn-danger">Logout</a>
 </nav>
 
 <div class="container mt-4">
