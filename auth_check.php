@@ -1,9 +1,9 @@
 <?php
 
-require '../config/session.php';
+require '../session.php';
 
 if(!isset($_SESSION['user_id']))
 {
-    header("Location: ../auth/login.php");
+    header("Location: ../login.php");
     exit();
 }
