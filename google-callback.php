@@ -1,7 +1,7 @@
 <?php
 date_default_timezone_set('Pacific/Fiji');
-require 'session.php';
-require 'google-config.php';
+require __DIR__ . '/session.php';
+require __DIR__ . '/google-config.php';
 
 if (!isset($_GET['code'])) {
     die("No authorization code received.");
