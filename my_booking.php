@@ -1,9 +1,9 @@
 <?php
 
-require '../config/session.php';
-require '../config/auth_check.php';
-require '../config/role_check.php';
-require '../config/db.php';
+require 'session.php';
+require 'auth_check.php';
+require 'role_check.php';
+require 'db.php';
 
 requireRole('customer');
 
@@ -13,7 +13,7 @@ requireRole('customer');
 |--------------------------------------------------------------------------
 */
 if (!isset($_SESSION['user_id'])) {
-    header("Location: ../auth/login.php");
+    header("Location: ../login.php");
     exit();
 }
 
@@ -65,7 +65,7 @@ rel="stylesheet">
 
     <div>
         <a href="dashboard.php" class="btn btn-secondary btn-sm">Dashboard</a>
-        <a href="../auth/logout.php" class="btn btn-danger btn-sm">Logout</a>
+        <a href="logout.php" class="btn btn-danger btn-sm">Logout</a>
     </div>
 </nav>
 
