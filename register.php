@@ -1,8 +1,8 @@
 <?php
 date_default_timezone_set('Pacific/Fiji');
 
-require '../config/session.php';
-require '../config/db.php';
+require 'session.php';
+require 'db.php';
 
 $message = "";
 
