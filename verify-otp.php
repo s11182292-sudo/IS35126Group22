@@ -1,7 +1,7 @@
 <?php
 date_default_timezone_set('Pacific/Fiji');
-require 'session.php';
-require 'db.php';
+require __DIR__ . '/session.php';
+require __DIR__ . '/db.php';
 
 date_default_timezone_set('Pacific/Fiji');
 
