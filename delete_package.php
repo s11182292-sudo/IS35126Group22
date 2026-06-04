@@ -1,9 +1,9 @@
 <?php
 
-require 'session.php';
-require 'auth_check.php';
-require 'role_check.php';
-require 'db.php';
+require __DIR__ . '/session.php';
+require __DIR__ . '/auth_check.php';
+require __DIR__ . '/role_check.php';
+require __DIR__ . '/db.php';
 
 requireRole('admin');
 
