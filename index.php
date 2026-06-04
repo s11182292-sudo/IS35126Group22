@@ -1,6 +1,6 @@
 <?php
 
-require 'session.php';
+require __DIR__ . '/session.php';
 
 /*
 |--------------------------------------------------------------------------
@@ -9,8 +9,8 @@ require 'session.php';
 */
 $isLoggedIn = isset($_SESSION['user_id']);
 
-include 'header.php';
-include 'navbar.php';
+include __DIR__ . '/header.php';
+include __DIR__ . '/navbar.php';
 
 ?>
 
