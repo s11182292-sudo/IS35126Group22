@@ -1,7 +1,7 @@
 <?php
 date_default_timezone_set('Pacific/Fiji');
-require '../config/session.php';
-require '../config/google-config.php';
+require '../session.php';
+require '../google-config.php';
 
 if (!isset($_GET['code'])) {
     die("No authorization code received.");
@@ -26,7 +26,7 @@ $name  = $userInfo->name;
 $google_id = $userInfo->id;
 
 // TODO: connect to DB and create/login user
-require '../config/db.php';
+require '../db.php';
 
 $stmt = $pdo->prepare("SELECT * FROM users WHERE email = ?");
 $stmt->execute([$email]);
