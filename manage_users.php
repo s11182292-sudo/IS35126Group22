@@ -1,10 +1,10 @@
 <?php
 
-require '../session.php';
-require '../security.php';
-require '../auth_check.php';
-require '../role_check.php';
-require '../db.php';
+require 'session.php';
+require 'security.php';
+require 'auth_check.php';
+require 'role_check.php';
+require 'db.php';
 
 requireRole('admin');
 
@@ -44,7 +44,7 @@ $users = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
 <nav class="navbar navbar-dark bg-dark px-3">
     <span class="navbar-brand">Manage Users</span>
-    <a href="../logout.php" class="btn btn-danger">Logout</a>
+    <a href="logout.php" class="btn btn-danger">Logout</a>
 </nav>
 
 <div class="container mt-4">
